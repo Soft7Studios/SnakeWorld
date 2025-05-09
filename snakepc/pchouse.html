@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake PC | Snake World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background: #0a0a1a;
+      color: white;
+      min-height: 100vh;
+      overflow: hidden;
+      animation: bgPulse 15s infinite alternate;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .title {
+      font-size: 4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      text-align: center;
+      background: linear-gradient(90deg, #00f5d4, #00bbf9, #9b5de5);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 20px rgba(155,93,229,0.3);
+      animation: titleGlow 3s infinite alternate;
+      margin-bottom: 3rem;
+    }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+    .btn {
+      height: 60px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #6e45e2, #88d3ce);
+      color: white;
+      transition: transform .3s, box-shadow .3s;
+    }
+    .btn:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    .btn-back {
+      background: linear-gradient(135deg, #7300ff, #05f7ff);
+      margin-top: 1rem;
+    }
+    .info-section {
+      display: none;
+      background: rgba(0,0,0,0.6);
+      padding: 1rem;
+      border-radius: 8px;
+      width: 100%;
+    }
+    .info-section h1 {
+      margin-bottom: 1rem;
+    }
+    .info-section p {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+      font-size: 1rem;
+    }
+    .info-section strong {
+      color: white;
+      font-weight: 700;
+    }
+    @keyframes titleGlow {
+      0% { text-shadow: 0 0 10px rgba(155,93,229,0.3); }
+      50% { text-shadow: 0 0 30px rgba(155,93,229,0.6), 0 0 60px rgba(0,187,249,0.4); }
+      100% { text-shadow: 0 0 10px rgba(155,93,229,0.3); }
+    }
+    @keyframes bgPulse {
+      0% { background-color: #0a0a1a; }
+      33% { background-color: #0a0a2a; }
+      66% { background-color: #0a1a1a; }
+      100% { background-color: #1a0a1a; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div id="main-menu">
+      <h1 class="title">SNAKE  PC</h1>
+      <div class="grid">
+
+        <button class="btn" onclick="location.href='/SnakeWorld/snakepc/asnakepc.html';">SNAKE</button>
+        <button class="btn" onclick="location.href='/SnakeWorld/snakepc/bkcobra.html';">KING COBRA</button>
+        <button class="btn" onclick="location.href='/SnakeWorld/snakepc/cpiton.html';">PITON</button>
+        <button class="btn" onclick="location.href='/SnakeWorld/snakepc/danaconda.html';">ANACONDA</button>
+        <button class="btn" onclick="location.href='/SnakeWorld/snakepc/etitanoboa.html';">TITANOBOA</button>
+      </div>
+      <div style="height: 1rem;"></div>
+      <button class="btn btn-back" onclick="showInfo();">CONTROLS & INFO</button>
+      <button class="btn btn-back" onclick="location.href='../index.html';">GO HOME</button>
+    </div>
+
+    <div id="info-section" class="info-section">
+      <h1 class="title" style="font-size:2rem;">CONTROLS & INFORMATION</h1>
+      <div class="content">
+        <strong>Information:</strong>
+        <p>This is the PC version of Snake. I recommend upsizing your browser to make it more comfortable to play and enjoy a better experience.</p>
+        <p>Yes, I know these game modes are quite large, but... Will you be able to get the biggest snake?</p>
+        <p><strong>GameBar:</strong> In the game bar, you'll see all your progress, including your record, playtime, and buttons that will help you have a better gaming experience!</p>
+        <strong>Controls:</strong>
+        <p>Button: 🌚🌞 This will help you switch from Light Mode to Dark Mode.</p>
+        <p>Button: 🎮 This will help you add RGB to your game, for more FPS!</p>
+        <p>F key: Pause/continue, T key: Move the Gamebar up and down, </p>
+        <p>You can zoom using the key: Control + mouse wheel and/or key: Control + "+" and "-" keys on laptops.</p>
+        <p>That's all! I hope you enjoy the game and we can add more things in the future!</p>
+      </div>
+      <button class="btn btn-back" onclick="showMenu();">BACK</button>
+    </div>
+  </div>
+
+  <script>
+    function showInfo() {
+      document.getElementById('main-menu').style.display = 'none';
+      document.getElementById('info-section').style.display = 'block';
+    }
+    function showMenu() {
+      document.getElementById('info-section').style.display = 'none';
+      document.getElementById('main-menu').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+Copyright (c) 2025 Soft7 Studios
+
+All rights reserved.
+
+This software, "World Snake," was developed by Soft7 Studios.
+It is protected by intellectual property laws, and its use, distribution, or modification is prohibited without express written permission from Soft7 Studios.
+
+You are prohibited from:
+- Copying or redistributing the software or any portion thereof.
+- Using the source code for commercial or personal purposes without permission.
+- Modifying the game for the purpose of distributing derivative versions.
+
+You may:
+- Play the game freely on the platforms where it is officially published.
+- Share the official game link with others.
+
+This software is distributed "as is," without warranties of any kind.
+
+For inquiries, contact, or future collaborations, please write to: soft7studios@gmail.com
