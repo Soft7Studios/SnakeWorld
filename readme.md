@@ -8,7 +8,7 @@
 ---
 
 # DEMO EN VIVO:
-- 🎮 [https://github.com/Soft7Studios/SnakeWorld/]
+- 🎮 [[https://github.com/Soft7Studios/SnakeWorld/]](https://soft7studios.github.io/SnakeWorld/)
 
 ## GitHub Repositorios:
 - ⭐ https://github.com/Soft7Studios
